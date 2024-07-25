@@ -1,0 +1,519 @@
+/* -----------------DEFAULTS----------------- */
+@font-face {
+    font-family: opendys;
+    src: url(../fonts/OpendyslexicRegular-nRLZ0.otf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: opendys;
+}
+
+h1,
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    color: #696969;
+    font-size: 14px;
+}
+
+body {
+    background-color: #D5E4F1;
+    background-image: url(../images/all_pages/dxb111\ background.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    min-height: 75vh;
+}
+
+.skip-link {
+    position: absolute;
+    left: -300px;
+  }
+
+.skip-link:focus{
+  
+    position: initial;
+    left: 0;
+    margin-bottom: 1000px;
+  }
+
+header,
+#navbar,
+footer {
+    background-color: #006079;
+}
+
+header {
+    text-align: center;
+    font-size: 14px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* nav */
+#navbar {
+    text-align: center;
+    font-size: 25px;
+
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+
+    margin-top: -13px;
+
+    z-index: 1;
+    box-shadow: 0px 7px 8px #888888;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+#navbar a {
+    font-size: 20px;
+
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+nav a.active {
+    background-color: #0088aa;
+}
+
+/* burger menu button */
+label {
+    color: white;
+}
+
+#burger {
+    display: none;
+}
+
+#nav_items {
+    display: none;
+    justify-content: center;
+}
+
+#burger:checked~#nav_items {
+    display: flex;
+}
+
+/* breadcrumb */
+
+h4 {
+    width: 140px;
+}
+
+#breadcrumb a {
+    font-style: italic;
+}
+
+#breadcrumb {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+#breadcrumb ul {
+    list-style: none;
+    display: flex;
+}
+
+#breadcrumb li:not([aria-current])::after {
+    content: ">" / "";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    height: 20px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    font-size: 10px;
+}
+
+/* ----------Index Page content---------- */
+
+/* Page buttons */
+
+#page_buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_button {
+    width: 170px;
+}
+
+#fun_facts,
+.fact_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cards */
+
+.fact_card,
+.location_item,
+#location_information,
+#open_hours,
+#gmap,
+#location_contact,
+#contact_info,
+#about_card,
+#social,
+#email_card {
+    box-shadow: 0px 7px 8px #888888;
+    background-color: white;
+
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.index_images,
+.location_image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Centered Items */
+
+.fact_card,
+.location_item,
+#location_information,
+#open_hours,
+#gmap,
+#location_contact,
+#local_images,
+.more_button,
+#visit_button,
+#next_category,
+#about_card,
+#email_card,
+#contact_social {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------Food and Fun Index Page---------- */
+
+.location_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.more_button,
+#visit_button {
+    margin-top: 20px;
+
+    padding: 5px;
+
+    width: 70%;
+    text-align: center;
+
+    color: white;
+    background-color: #006079;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#next_category {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    align-items: center;
+}
+
+#next_category .page_button {
+    width: 125px;
+}
+
+/* ----------Food and Fun Page---------- */
+
+#location_information,
+#location_contact,
+#hour_map {
+    display: flex;
+    flex-direction: column;
+}
+
+#hour_map {
+    gap: 20px;
+}
+
+#hours {
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+}
+
+#local_images {
+    box-shadow: 0px 7px 8px #888888;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+#gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.g_image {
+    width: 250px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+/* ----------About Page---------- */
+
+.socials,
+#email_pfp {
+    width: 75px;
+    height: 75px;
+}
+
+#contact_social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#medias {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#send_email {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#enter_user_email,
+#enter_email_message,
+#email_send_button,
+#subject_email {
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#enter_email_message {
+    padding-bottom: 70px;
+}
+
+#email_send_button {
+    float: right;
+
+    border: none;
+
+    margin-top: 10px;
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    background-color: #006079;
+    color: white;
+}
+
+#email {
+    display: flex;
+}
+
+#email_pfp {
+    border-radius: 100%;
+}
+
+
+@media (min-width: 768px) {
+
+    header {
+        font-size: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 18px;
+    }
+
+    /* ----------Index Page Content---------- */
+
+    #page_buttons {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .page_button {
+        width: 250px;
+    }
+
+    #fun_facts {
+        gap: 30px;
+    }
+
+    .fact_box {
+        flex-direction: row;
+    }
+
+    /* ----------Food and Fun Index Content---------- */
+
+    .location_item {
+        display: flex;
+    }
+
+    .location_image {
+        width: 45%;
+    }
+
+    .location_info {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* cards */
+
+    .fact_card {
+        width: 300px;
+        margin: 0;
+    }
+
+    .location_item,
+    #location_information,
+    #open_hours,
+    #gmap,
+    #location_contact,
+    #about_card,
+    #email_card,
+    #contact_social {
+        width: 650px;
+    }
+
+    /* ----------Food and Fun Page Content---------- */
+
+    #hour_map {
+        flex-direction: row;
+
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #location_contact {
+        text-align: center;
+    }
+
+    #local_images {
+        width: 747px;
+    }
+
+    #visit_button {
+        width: 35%;
+    }
+
+    /* ----------About Page---------- */
+
+    .socials {
+        width: 50px;
+        height: 50px;
+    }
+
+    #contact_social {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /* Navbar */
+
+    #navbar a:hover {
+        background-color: #2ba0bd;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar label {
+        display: none;
+    }
+
+    #nav_items a {
+        margin-right: 40px;
+        margin-left: 40px;
+
+        padding-top: 7px;
+        padding-bottom: 3px;
+    }
+
+    #nav_items {
+        display: flex;
+    }
+
+    .fact_card {
+        width: 350px;
+    }
+
+    #fun_facts {
+        margin-left: auto;
+        margin-right: auto;
+
+        flex-direction: column;
+    }
+
+    .fact_box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #local_images {
+        width: 100%;
+    }
+}
