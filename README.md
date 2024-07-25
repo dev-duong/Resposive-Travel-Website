@@ -1,10 +1,4 @@
-<h1>DXB111 | Assessment 2: High-fidelity Web Prototype</h1>
+# Responsive Travel Website
+ A children's travel website built using HTML, and CSS. 
 
----
-
-**Unit Coordinator:** Nick Kelly <br>
-**Contact Email:** nick.kelly@qut.edu.au
-
----
-
-This work is created and owned by student: Dat Duong n11084081
+This responsive website was created to help me understand the requirements of the Web Content Accessibility Guidelines (WCAG) and further expand my website development knowledge.
